@@ -31,7 +31,7 @@
 #include <polarssl/dhm.h>
 typedef mpi * MP_t;
 #define MP_new(m)	m = malloc(sizeof(mpi)); mpi_init(m)
-=)#define MP_set_w(mpi, w)	mpi_lset(mpi, w)
+#define MP_set_w(mpi, w)	mpi_lset(mpi, w)
 #define MP_cmp(u, v)	mpi_cmp_mpi(u, v)
 #define MP_set(u, v)	mpi_copy(u, v)
 #define MP_sub_w(mpi, w)	mpi_sub_int(mpi, mpi, w)
